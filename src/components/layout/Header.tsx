@@ -9,8 +9,8 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   
-  const handleTabClick = (tabValue) => {
-    const tabElement = document.querySelector(`[data-value="${tabValue}"]`);
+  const handleTabClick = (tabValue: string) => {
+    const tabElement = document.querySelector(`[data-value="${tabValue}"]`) as HTMLButtonElement;
     if (tabElement) {
       tabElement.click();
     }
