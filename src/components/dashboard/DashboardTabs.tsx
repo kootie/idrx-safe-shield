@@ -12,10 +12,10 @@ export function DashboardTabs() {
   return (
     <Tabs defaultValue="dashboard" value={activeTab} onValueChange={setActiveTab} className="w-full">
       <TabsList className="grid grid-cols-4 mb-8">
-        <TabsTrigger value="dashboard">Dashboard</TabsTrigger>
-        <TabsTrigger value="coverage">My Coverage</TabsTrigger>
-        <TabsTrigger value="claims">Claims</TabsTrigger>
-        <TabsTrigger value="pool">Pool Stats</TabsTrigger>
+        <TabsTrigger value="dashboard" data-value="dashboard">Dashboard</TabsTrigger>
+        <TabsTrigger value="coverage" data-value="coverage">My Coverage</TabsTrigger>
+        <TabsTrigger value="claims" data-value="claims">Claims</TabsTrigger>
+        <TabsTrigger value="pool" data-value="pool">Pool Stats</TabsTrigger>
       </TabsList>
       
       <TabsContent value="dashboard" className="animate-fade-in">
